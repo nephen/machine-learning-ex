@@ -16,7 +16,7 @@ J = 0;
 
 h = X*theta; % h=theta^T*x or h=x*theta, h is the value of hypothesis function
 
-J = sum((h-y).*(h-y))/(2*m);
+J = ((h-y)'*(h-y))/(2*m);
 
 
 % =========================================================================

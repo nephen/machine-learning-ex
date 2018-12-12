@@ -18,8 +18,8 @@ for iter = 1:num_iters
     %
 
 
-    temp1 = theta(1) - alpha*sum(X*theta-y)/m;
-    temp2 = theta(2) - alpha*sum((X*theta-y).*X(:,2))/m;
+    temp1 = theta(1) - alpha*(X*theta-y)'*X(:,1)/m;
+    temp2 = theta(2) - alpha*(X*theta-y)'*X(:,2)/m;
     
     % update theta0 and theta1 simultaneously
     theta(1) = temp1;

@@ -14,7 +14,9 @@ J = 0;
 %               You should set J to the cost.
 
 
+h = X*theta; % h=theta^T*x or h=x*theta, h is the value of hypothesis function
 
+J = (h-y)'*(h-y)/(2*m);
 
 
 % =========================================================================
